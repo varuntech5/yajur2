@@ -1,4 +1,4 @@
-    <html>
+   <html>
     <head>
       <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
@@ -204,9 +204,11 @@
         <label>Email</label>
         <input class="w3-input" type="email" id="city" required>
       </div>
-      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Submit</a>
+      <button  data-target="modal1" class="w3-button w3-right w3-theme">Submit</button>
+      <button  type="submit" class="waves-effect waves-light btn modal-trigger"> Add Cafe</button>
       </form>
       <!-- <form >
+        <button class="waves-effect waves-light btn modal-trigger" data-target="modal1"> Add Cafe</button> 
         <input type="text" name="name"  placeholder="Cafe name">
         <input type="text" name="city"  placeholder="Cafe city">
         <button>Add Cafe</button>
