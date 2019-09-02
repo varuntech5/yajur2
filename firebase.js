@@ -9,18 +9,13 @@ $('form').on('submit' , (e)=> {
             $('#name').val("");
             $('#city').val("");
             alert('successful');
+            $('.modal').modal();
             console.log('successful',s)
         })
         .catch(function (err) {
             console.log("no", err);
            })
-    
 })
-$(document).ready(function(){
-    $('.modal').modal();
-  });
-
-
 
 
 
