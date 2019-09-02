@@ -1,30 +1,3 @@
-
-// saving data
-// function adddata (){
-   
-//     try {
-//         db.collection('email').add({
-            
-//             name: form.name.value,
-//             email: form.email.value
-           
-//         });
-        
-//     } catch (e) {
-//         console.log(e)
-//     }
-   
-  
-// } 
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     db.collection('email').add({
-//         name: form.name.value,
-//         email: form.email.value
-//     });
-// });
- 
-
 $('form').on('submit' , (e)=> {
     e.preventDefault();
     
@@ -35,13 +8,20 @@ $('form').on('submit' , (e)=> {
         .then(function (s){
             $('#name').val("");
             $('#city').val("");
-            console.log('Yes',s)
+            alert('successful');
+            console.log('successful',s)
         })
         .catch(function (err) {
             console.log("no", err);
            })
     
 })
+$(document).ready(function(){
+    $('.modal').modal();
+  });
+
+
+
 
 
 
