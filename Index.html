@@ -1,4 +1,4 @@
-  <html>
+    <html>
     <head>
       <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
@@ -196,17 +196,15 @@
     </div>
     <div class="w3-col m7">
       <form class="w3-container w3-card-4 w3-padding-16 w3-white" id="add-cafe-form" >
-      <div class="w3-section">      
+      <div class="w3-section">
         <label>Name</label>
         <input class="w3-input" type="text" id="name"name="name" required>
       </div>
-      <div class="w3-section">      
+      <div class="w3-section">
         <label>Email</label>
         <input class="w3-input" type="email" id="city" required>
       </div>
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Submit</a>
       </form>
       <!-- <form >
         <input type="text" name="name"  placeholder="Cafe name">
@@ -277,5 +275,18 @@
       const db = firebase.firestore();
   </script>
    <script src="firebase.js"></script>
+     <!-- Modal Trigger -->
+  
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>successful</h4>
+      <!-- <p>A bunch of text</p> -->
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">X</a>
+    </div>
+  </div>
     </body>
   </html>
