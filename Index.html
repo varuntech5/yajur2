@@ -1,0 +1,281 @@
+  <html>
+    <head>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+         <li><a href="#">Navbar Link 1</a></li>
+          <li><a href="#">Navbar Link 2</a></li>
+          <li><a href="#">Navbar Link 3</a></li>
+          <li><a href="#">Navbar Link 4</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link 1</a></li>
+        <li><a href="#">Navbar Link 2</a></li>
+        <li><a href="#">Navbar Link 3</a></li>
+        <li><a href="#">Navbar Link 4</a></li>
+        <li><hr></li>
+        <ul>
+           <li> <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+        <li> <a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+        </ul>
+      </ul>
+      
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <!-- Team Container -->
+<div style="width: 100%; height:100vh;">
+    <img src="test.jpg" style="width: 100%; height:100vh;">
+  </div>
+<!-- <div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>Meet the team - our office rats:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="test.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Johnny Walker</h3>
+  <p>Web Designer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="test.jpg"  alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Rebecca Flex</h3>
+  <p>Support</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="test.jpg"  alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Jan Ringo</h3>
+  <p>Boss man</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="test.jpg"  alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kai Ringo</h3>
+  <p>Fixer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="test.jpg"  alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kai Ringo</h3>
+  <p>Fixer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="test.jpg"  alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kai Ringo</h3>
+  <p>Fixer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="test.jpg"  alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kai Ringo</h3>
+  <p>Fixer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="test.jpg"  alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kai Ringo</h3>
+  <p>Fixer</p>
+</div>
+
+</div>
+</div> -->
+<div class="team-section" >
+    <div class="inner-width">
+      <h1>Meet Our Team</h1>
+      <div class="pers">
+
+
+        <div class="pe">
+          <img src="test.jpg" class="imgs"  alt="">
+          <div class="p-name">Full Name</div>
+          <div class="p-des">Designer</div>
+          <div class="p-sm">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="pe">
+          <img src="test.jpg"  class="imgs" alt="">
+          <div class="p-name">Full Name</div>
+          <div class="p-des">Designer</div>
+          <div class="p-sm">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="pe">
+          <img src="test.jpg" class="imgs"  alt="">
+          <div class="p-name">Full Name</div>
+          <div class="p-des">Developer</div>
+          <div class="p-sm">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="pe">
+            <img src="test.jpg" class="imgs"  alt="">
+            <div class="p-name">Full Name</div>
+            <div class="p-des">Designer</div>
+            <div class="p-sm">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+  
+          <div class="pe">
+            <img src="test.jpg"  class="imgs" alt="">
+            <div class="p-name">Full Name</div>
+            <div class="p-des">Designer</div>
+            <div class="p-sm">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+  
+          <div class="pe">
+            <img src="test.jpg"class="imgs"  alt="">
+            <div class="p-name">Full Name</div>
+            <div class="p-des">Developer</div>
+            <div class="p-sm">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+  
+
+      </div>
+
+    </div>
+  </div>
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" id="add-cafe-form" >
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" id="name"name="name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="email" id="city" required>
+      </div>
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+      <!-- <form >
+        <input type="text" name="name"  placeholder="Cafe name">
+        <input type="text" name="city"  placeholder="Cafe city">
+        <button>Add Cafe</button>
+      </form> -->
+    </div>
+  </div>
+</div>
+
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+      <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="materialize.js"></script>
+    <script src="init.js"></script>
+    
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDth0Nyt00JylgIr2yFIBJRMuXrKlv5G0c",
+        authDomain: "yajur-e8ef6.firebaseapp.com",
+        databaseURL: "https://yajur-e8ef6.firebaseio.com",
+        projectId: "yajur-e8ef6",
+        storageBucket: "",
+        messagingSenderId: "349789731523",
+        appId: "1:349789731523:web:335fb798787065e8"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+  </script>
+   <script src="firebase.js"></script>
+    </body>
+  </html>
